@@ -14,13 +14,13 @@ class YandexImagesLocators:
 
 
 class ImagesPage(Page):
-    """Класс наследует Page и представляет страницу 'картинки' в Яндекса"""
+    """Класс наследует Page и представляет страницу 'картинки' в Яндекс"""
     def __init__(self, driver):
         super().__init__(driver)
         self.base_url = "https://yandex.ru/images/"
 
     def open_page(self):
-        """Метод открывает страницу 'картинки' в яндекса"""
+        """Метод открывает страницу 'картинки' в яндекс"""
         return self.driver.get(self.base_url)
 
     def get_current_image_src(self):
